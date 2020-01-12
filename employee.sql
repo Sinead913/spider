@@ -6,9 +6,6 @@ SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
 
 DROP TABLE IF EXISTS employees
 
-/*!50503 set default_storage_engine = InnoDB */;
-/*!50503 select CONCAT('storage engine: ', @@default_storage_engine) as INFO */;
-
 CREATE TABLE employees (
     emp_no      INT             NOT NULL,
     birth_date  DATE            NOT NULL,
@@ -18,8 +15,6 @@ CREATE TABLE employees (
     hire_date   DATE            NOT NULL,
     PRIMARY KEY (emp_no)
 );
-
-flush /*!50503 binary */ logs;
 
 SELECT 'LOADING employees' as 'INFO';
 source load_employeeTest.dump ;
