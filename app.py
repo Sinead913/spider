@@ -16,5 +16,5 @@ db = sqlalchemy.create_engine(
 )
 
 for page in d:
-  conn.execute(students.insert(), page)
+  conn.execute(webpages.insert(), page)
                
