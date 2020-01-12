@@ -15,5 +15,3 @@ CREATE TABLE webpages (
 
 SELECT 'LOADING employees' as 'INFO';
 source load_employeeTest.dump ;
-
-source show_elapsed.sql ;
