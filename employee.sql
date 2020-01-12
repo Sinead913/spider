@@ -2,6 +2,8 @@ DROP DATABASE IF EXISTS spiderIndexer;
 CREATE DATABASE IF NOT EXISTS spiderIndexer;
 USE spiderIndexer;
 
+SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
+
 DROP TABLE IF EXISTS webpages;
 
 CREATE TABLE webpages (
@@ -11,7 +13,7 @@ CREATE TABLE webpages (
     PRIMARY KEY (pageID)
 );
 
-INSERT INTO `webpages` VALUES (1,'Georgi','Facello'),
-(2,'Bezalel','Simmel'),
-(3,'Yinghua','Dredge'),
-(4,'Jaewon','Syrzycki');
+SELECT 'LOADING employees' as 'INFO';
+source load_employeeTest.dump ;
+
+source show_elapsed.sql ;
