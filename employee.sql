@@ -1,18 +1,17 @@
-DROP DATABASE IF EXISTS employees;
-CREATE DATABASE IF NOT EXISTS employees;
-USE employees;
+DROP DATABASE IF EXISTS spiderIndexer;
+CREATE DATABASE IF NOT EXISTS spiderIndexer;
+USE spiderIndexer;
 
-DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS webpages;
 
-CREATE TABLE employees (
-    emp_no      INT             NOT NULL,
-    first_name  VARCHAR(14)     NOT NULL,
-    last_name   VARCHAR(16)     NOT NULL,
-    gender      ENUM ('M','F')  NOT NULL,    
-    PRIMARY KEY (emp_no)
+CREATE TABLE webpages (
+    pageID      INT             NOT NULL,
+    URL  VARCHAR(14)     NOT NULL,
+    webContent   VARCHAR(16)     NOT NULL,
+    PRIMARY KEY (pageID)
 );
 
-INSERT INTO `employees` VALUES (10001,'Georgi','Facello','M'),
-(10002,'Bezalel','Simmel','F'),
-(10050,'Yinghua','Dredge','M'),
-(10113,'Jaewon','Syrzycki','M');
+INSERT INTO `webpages` VALUES (1,'Georgi','Facello'),
+(2,'Bezalel','Simmel'),
+(3,'Yinghua','Dredge'),
+(4,'Jaewon','Syrzycki');
