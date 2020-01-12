@@ -10,7 +10,7 @@ db = sqlalchemy.create_engine(
         drivername="mysql+pymysql",
         user="root",
         password="password",
-        database="spiderIndexer"
+        database="spiderIndexer",
         query={"unix_socket": "/cloudsql/{}".format("cloudcomputing3032:us-central1:spiderindexer")},
     ),
 )
