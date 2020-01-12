@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS employees;
 CREATE DATABASE IF NOT EXISTS employees;
 USE employees;
 
-DROP TABLE IF EXISTS employees
+DROP TABLE IF EXISTS employees;
 
 CREATE TABLE employees (
     emp_no      INT             NOT NULL,
