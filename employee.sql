@@ -7,11 +7,9 @@ SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
 DROP TABLE IF EXISTS webpages;
 
 CREATE TABLE webpages (
-    pageID      INT             NOT NULL,
     URL  VARCHAR(14)     NOT NULL,
-    webContent   VARCHAR(16)     NOT NULL,
-    PRIMARY KEY (pageID)
+    webContent   VARCHAR(16)     NOT NULL
 );
 
 SELECT 'LOADING employees' as 'INFO';
-source load_employeeTest.dump ;
+source article.csv ;
