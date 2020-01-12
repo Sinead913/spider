@@ -4,7 +4,7 @@ import mysql.connector
 with open('article.json') as json_data: d=json.load(json_data)
 
 db_connection = mysql.connector.connect(
-  socketPath="/cloudsql/cloudcomputing3032:us-central1:spiderindexer",
+#   socketPath="/cloudsql/cloudcomputing3032:us-central1:spiderindexer",
   user="root",
   passwd="password",
   database="spiderIndexer"
