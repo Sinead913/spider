@@ -1,5 +1,5 @@
 import json
-import mysql
+import mysql.connector
 
 with open('article.json') as json_data: d=json.load(json_data)
 
