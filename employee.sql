@@ -2,8 +2,6 @@ DROP DATABASE IF EXISTS employees;
 CREATE DATABASE IF NOT EXISTS employees;
 USE employees;
 
-SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
-
 DROP TABLE IF EXISTS employees
 
 CREATE TABLE employees (
@@ -15,8 +13,3 @@ CREATE TABLE employees (
     hire_date   DATE            NOT NULL,
     PRIMARY KEY (emp_no)
 );
-
-SELECT 'LOADING employees' as 'INFO';
-source load_employeeTest.dump ;
-
-source show_elapsed.sql ;
