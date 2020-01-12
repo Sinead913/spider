@@ -6,7 +6,7 @@ with open('article.json') as json_data: d=json.load(json_data)
   
   
 db = sqlalchemy.create_engine(
-  mysql+pymysql://root:password@/spiderIndexer?unix_socket=/cloudsql/cloudcomputing3032:us-central1:spiderindexer
+  "mysql+pymysql://root:password@/spiderIndexer?unix_socket=/cloudsql/cloudcomputing3032:us-central1:spiderindexer"
 #     sqlalchemy.engine.url.URL(
 #         drivername="mysql+pymysql",
 #         user="root",
