@@ -1,4 +1,0 @@
-INSERT INTO `webpages` VALUES (1,'Georgi1','Facello'),
-(2,'Bezalel','Simmel'),
-(3,'Yinghua','Dredge'),
-(4,'Jaewon','Syrzycki');
